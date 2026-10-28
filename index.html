@@ -393,29 +393,6 @@
           transparent 1px,
           transparent 60px),
         linear-gradient(135deg, transparent 0%, rgba(245, 198, 24, .08) 48%, transparent 49%);
-      animation: grid-drift 18s ease-in-out infinite alternate;
-    }
-
-    .hero::after {
-      content: '';
-      position: absolute;
-      right: -100px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 500px;
-      height: 500px;
-      border: 60px solid rgba(245, 198, 24, 0.04);
-      pointer-events: none;
-    }
-
-    @keyframes grid-drift {
-      from {
-        background-position: 0 0, 0 0, 0 0;
-      }
-
-      to {
-        background-position: 40px 0, 0 40px, 0 0;
-      }
     }
 
     .hero-inner {
