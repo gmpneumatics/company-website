@@ -8,8 +8,10 @@
   <meta content='GM Pneumatics manufactures and supplies DTH hammers (3½"–8") and button bits (102–241 mm) for water-well drilling, mining and quarrying. DHD, QL, SD and Mission shanks. Udyam MSME, EEPC-registered exporter, Hyderabad, India.' name="description"/>
   <link rel="icon" type="image/svg+xml" href="assets/gm-pneumatics-logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/app-mining-quarry.webp" fetchpriority="high">
   <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Barlow+Condensed:wght@400;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@400;600;700;800&display=swap"
     rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
@@ -570,51 +572,6 @@
       left: -65px;
     }
 
-    /*
-    ── MARQUEE DISABLED ─────────────────────────────────────────
-    .marquee-bar {
-      background: var(--gold);
-      padding: 10px 0;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .marquee-track {
-      display: inline-flex;
-      animation: marquee 60s linear infinite;
-    }
-
-    .marquee-bar:hover .marquee-track {
-      animation-play-state: paused;
-    }
-
-    @keyframes marquee {
-      to {
-        transform: translateX(-50%);
-      }
-    }
-
-    .marquee-item {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      color: var(--charcoal);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 0 24px;
-      display: inline-flex;
-      align-items: center;
-      gap: 24px;
-    }
-
-    .marquee-item::after {
-      content: '';
-      width: 7px;
-      height: 7px;
-      background: var(--charcoal);
-      transform: rotate(45deg);
-    }
-    */
 
     /* ── PROBLEM SECTION ─────────────────────────────────────── */
     .problem {
@@ -1923,28 +1880,6 @@
       </ul>
     </div>
 
-    <!-- MARQUEE DISABLED
-    <div class="marquee-bar">
-      <div class="marquee-track">
-        <span class="marquee-item">Water Well Drilling</span>
-        <span class="marquee-item">Hard Rock Mining</span>
-        <span class="marquee-item">Open Pit Quarrying</span>
-        <span class="marquee-item">Blast Hole Drilling</span>
-        <span class="marquee-item">Overburden Drilling</span>
-        <span class="marquee-item">Foundation Piling</span>
-        <span class="marquee-item">Made in India</span>
-        <span class="marquee-item">EEPC Registered</span>
-        <span class="marquee-item">Water Well Drilling</span>
-        <span class="marquee-item">Hard Rock Mining</span>
-        <span class="marquee-item">Open Pit Quarrying</span>
-        <span class="marquee-item">Blast Hole Drilling</span>
-        <span class="marquee-item">Overburden Drilling</span>
-        <span class="marquee-item">Foundation Piling</span>
-        <span class="marquee-item">Made in India</span>
-        <span class="marquee-item">EEPC Registered</span>
-      </div>
-    </div>
-    -->
   </nav>
 
   <!-- HERO -->
@@ -2228,7 +2163,7 @@
       <div class="app-grid">
         <div class="app-card fade-up">
           <div class="app-card-img">
-            <img src="assets/app-water-well.webp" class="app-card-img-inner" alt="DTH water well drilling rig in hard rock">
+            <img src="assets/app-water-well.webp" class="app-card-img-inner" alt="DTH water well drilling rig in hard rock" width="1000" height="643" decoding="async">
           </div>
           <div class="app-card-body">
             <div class="app-icon glass-icon"><i data-lucide="droplets" class="icon-md"></i></div>
@@ -2245,7 +2180,7 @@
         </div>
         <div class="app-card fade-up">
           <div class="app-card-img">
-            <img src="assets/app-mining-quarry.webp" class="app-card-img-inner" alt="Hard rock mining drill rig in an open pit">
+            <img src="assets/app-mining-quarry.webp" class="app-card-img-inner" alt="Hard rock mining drill rig in an open pit" width="1400" height="900" decoding="async">
           </div>
           <div class="app-card-body">
             <div class="app-icon glass-icon"><i data-lucide="pickaxe" class="icon-md"></i></div>
@@ -2261,7 +2196,7 @@
         </div>
         <div class="app-card fade-up">
           <div class="app-card-img">
-            <img src="assets/app-overburden.webp" class="app-card-img-inner" alt="Overburden casing system beside a drilling rig">
+            <img src="assets/app-overburden.webp" class="app-card-img-inner" alt="Overburden casing system beside a drilling rig" width="1000" height="643" decoding="async">
           </div>
           <div class="app-card-body">
             <div class="app-icon glass-icon"><i data-lucide="construction" class="icon-md"></i></div>
@@ -2581,12 +2516,16 @@
       btn.classList.add('active');
     }
 
+    function renderIcons() {
+      if (window.lucide) window.lucide.createIcons();
+    }
+
     async function handleSubmit() {
       const btn = document.querySelector(".form-submit");
 
       btn.disabled = true;
       btn.innerHTML = '<i data-lucide="loader-circle"></i>Sending...';
-      lucide.createIcons();
+      renderIcons();
 
       try {
         await emailjs.send(
@@ -2617,7 +2556,7 @@
 
       btn.disabled = false;
       btn.innerHTML = '<i data-lucide="send"></i>Send Enquiry';
-      lucide.createIcons();
+      renderIcons();
     }
 
     const observer = new IntersectionObserver((entries) => {
@@ -2629,8 +2568,9 @@
       });
     }, {threshold: 0.1});
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-    lucide.createIcons();
+    renderIcons();
   </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
