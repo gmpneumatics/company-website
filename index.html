@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GMP DTH Hammers & Drill Bits</title>
-  <meta name="description"
-    content="GMP manufactures DTH Hammers and Drill Bits for water well drilling and hard-rock mining. Indian-assembled quality at 30-40% below imported brands. EEPC registered exporter. Hyderabad, India.">
+  <title>GM Pneumatics | DTH Hammers &amp; Drill Bits | Hyderabad, India</title>
+  <meta content='GM Pneumatics manufactures and supplies DTH hammers (3½"–8") and button bits (102–241 mm) for water-well drilling, mining and quarrying. DHD, QL, SD and Mission shanks. Udyam MSME, EEPC-registered exporter, Hyderabad, India.' name="description"/>
+  <link rel="icon" type="image/svg+xml" href="assets/gm-pneumatics-logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Barlow+Condensed:wght@400;600;700;800&display=swap"
@@ -14,12 +14,12 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     :root {
-      --charcoal: #232323;
-      --charcoal-light: #2e2e2e;
-      --charcoal-mid: #3a3a3a;
-      --gold: #D4A017;
-      --gold-light: #F0B429;
-      --gold-pale: #FFF4D6;
+      --charcoal: #0B0B0B;
+      --charcoal-light: #1a1a1a;
+      --charcoal-mid: #2a2a2a;
+      --gold: #F5C618;
+      --gold-light: #FFD84A;
+      --gold-pale: #FFF8D9;
       --steel: #1A5276;
       --steel-light: #2471A3;
       --offwhite: #F4F6F8;
@@ -30,11 +30,11 @@
       --text-mid: #444;
       --text-light: #777;
       --border: rgba(0, 0, 0, 0.08);
-      --gold-border: rgba(212, 160, 23, 0.3);
+      --gold-border: rgba(245, 198, 24, 0.3);
       --copper: #B66A2C;
       --oxide: #7A4A2A;
       --ink: #111315;
-      --shadow-lg: 0 24px 70px rgba(17, 19, 21, 0.18);
+      --shadow-lg: 0 24px 70px rgba(11, 11, 11, 0.18);
     }
 
     *,
@@ -111,13 +111,13 @@
     }
 
     .glass-icon {
-      background: rgba(35, 35, 35, .28);
+      background: rgba(11, 11, 11, .28);
       border: 1px solid rgba(255, 255, 255, .24);
       border-radius: 0;
       color: rgba(255, 255, 255, .86);
       box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, .22),
-        inset 0 -18px 30px rgba(17, 19, 21, .18),
+        inset 0 -18px 30px rgba(11, 11, 11, .18),
         0 12px 30px rgba(0, 0, 0, .18);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
@@ -133,11 +133,11 @@
     .cred-item:hover .glass-icon {
       transform: scale(1.08);
       color: var(--gold-light);
-      background: rgba(35, 35, 35, .46);
-      border-color: rgba(240, 180, 41, .45);
+      background: rgba(11, 11, 11, .46);
+      border-color: rgba(255, 216, 74, .45);
       box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, .26),
-        inset 0 -18px 30px rgba(17, 19, 21, .14),
+        inset 0 -18px 30px rgba(11, 11, 11, .14),
         0 16px 36px rgba(0, 0, 0, .24);
     }
 
@@ -171,11 +171,56 @@
       background: var(--offwhite);
     }
 
+    .btn-dl {
+      border: 2px solid var(--silver);
+      color: var(--white);
+      background: transparent;
+    }
+
+    .btn-dl:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .cat-banner {
+      margin-top: 28px;
+      background: var(--charcoal);
+      border-left: 4px solid var(--gold);
+      border-radius: 6px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cat-banner strong { color: var(--white); font-size: 16px; }
+    .cat-banner p { color: var(--silver); font-size: 13px; margin-top: 4px; }
+
+    /* Darker yellow on light surfaces; bright yellow on dark product panels. */
+    .products,
+    .quality,
+    .distributors,
+    .contact-form {
+      --gold: #BD930F;
+      --gold-light: #A9810C;
+      --gold-border: rgba(189, 147, 15, 0.3);
+    }
+
+    .prod-table th,
+    .prod-info-box,
+    .cat-banner {
+      --gold: #F5C618;
+      --gold-light: #FFD84A;
+      --gold-border: rgba(245, 198, 24, 0.3);
+    }
+
     /* ── TOPBAR ──────────────────────────────────────────────── */
     .topbar {
       background: var(--charcoal);
       padding: 7px 0;
-      border-bottom: 1px solid rgba(212, 160, 23, .15);
+      border-bottom: 1px solid rgba(245, 198, 24, .15);
     }
 
     .topbar-inner {
@@ -241,15 +286,16 @@
     }
 
     .logo-icon {
-      height: 67px;
+      width: 48px;
+      height: 48px;
       position: relative;
       flex-shrink: 0;
     }
 
     .hero-logo {
-      height: 450px;
-      right: 34px;
-      top: -40px;
+      width: 100%;
+      height: 100%;
+      display: block;
       position: relative;
       flex-shrink: 0;
     }
@@ -319,7 +365,7 @@
     /* ── HERO ─────────────────────────────────────────────────── */
     .hero {
       background:
-        linear-gradient(110deg, rgba(17, 19, 21, .96) 0%, rgba(35, 35, 35, .86) 48%, rgba(122, 74, 42, .52) 100%),
+        linear-gradient(110deg, rgba(11, 11, 11, .96) 0%, rgba(11, 11, 11, .86) 48%, rgba(11, 11, 11, .92) 100%),
         url("assets/app-mining-quarry.webp") center/cover;
       position: relative;
       overflow: hidden;
@@ -335,16 +381,16 @@
       inset: 0;
       background-image:
         repeating-linear-gradient(90deg,
-          rgba(212, 160, 23, 0.03) 0px,
-          rgba(212, 160, 23, 0.03) 1px,
+          rgba(245, 198, 24, 0.03) 0px,
+          rgba(245, 198, 24, 0.03) 1px,
           transparent 1px,
           transparent 60px),
         repeating-linear-gradient(0deg,
-          rgba(212, 160, 23, 0.03) 0px,
-          rgba(212, 160, 23, 0.03) 1px,
+          rgba(245, 198, 24, 0.03) 0px,
+          rgba(245, 198, 24, 0.03) 1px,
           transparent 1px,
           transparent 60px),
-        linear-gradient(135deg, transparent 0%, rgba(212, 160, 23, .08) 48%, transparent 49%);
+        linear-gradient(135deg, transparent 0%, rgba(245, 198, 24, .08) 48%, transparent 49%);
       animation: grid-drift 18s ease-in-out infinite alternate;
     }
 
@@ -356,7 +402,7 @@
       transform: translateY(-50%);
       width: 500px;
       height: 500px;
-      border: 60px solid rgba(212, 160, 23, 0.04);
+      border: 60px solid rgba(245, 198, 24, 0.04);
       pointer-events: none;
     }
 
@@ -475,7 +521,7 @@
       position: absolute;
       inset: 0;
       border-radius: 50%;
-      border: 1px solid rgba(212, 160, 23, 0.15);
+      border: 1px solid rgba(245, 198, 24, 0.15);
       animation: spin-slow 40s linear infinite;
     }
 
@@ -484,7 +530,7 @@
       content: '';
       position: absolute;
       inset: 28px;
-      border: 1px dashed rgba(240, 180, 41, .22);
+      border: 1px dashed rgba(255, 216, 74, .22);
       border-radius: 50%;
     }
 
@@ -612,7 +658,7 @@
       inset: 0;
       z-index: 0;
       background:
-        linear-gradient(180deg, rgba(17, 19, 21, .14) 0%, rgba(17, 19, 21, .58) 48%, rgba(17, 19, 21, .96) 100%),
+        linear-gradient(180deg, rgba(11, 11, 11, .14) 0%, rgba(11, 11, 11, .58) 48%, rgba(11, 11, 11, .96) 100%),
         var(--problem-image) center/cover;
       opacity: .8;
       transform: scale(1);
@@ -825,6 +871,20 @@
       letter-spacing: .5px;
     }
 
+    .prod-table td.fits {
+      text-align: left;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .prod-table td.fits b { color: var(--charcoal); }
+
+    .prod-note {
+      font-size: 13px;
+      color: var(--text-light);
+      margin-top: 14px;
+    }
+
     /* Product info boxes */
     .prod-info-grid {
       display: grid;
@@ -836,11 +896,11 @@
     .prod-info-box {
       background:
         linear-gradient(145deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .02)),
-        rgba(35, 35, 35, .94);
+        rgba(11, 11, 11, .94);
       padding: 20px;
       border-radius: 4px;
       border-left: 3px solid var(--gold);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 16px 34px rgba(17, 19, 21, .12);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 16px 34px rgba(11, 11, 11, .12);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
     }
@@ -874,7 +934,7 @@
       width: 600px;
       height: 600px;
       border-radius: 50%;
-      border: 80px solid rgba(212, 160, 23, 0.04);
+      border: 80px solid rgba(245, 198, 24, 0.04);
       pointer-events: none;
     }
 
@@ -893,42 +953,17 @@
     }
 
     .why-card {
-      min-height: 320px;
       background: var(--charcoal-light);
       padding: 36px 32px;
       position: relative;
       overflow: hidden;
-      transition: transform .25s ease, box-shadow .25s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      isolation: isolate;
+      transition: transform .25s ease, box-shadow .25s ease, background .2s ease;
     }
 
     .why-card:hover {
+      background: var(--charcoal-mid);
       transform: translateY(-6px) scale(1.015);
       box-shadow: 0 22px 60px rgba(0, 0, 0, .28);
-    }
-
-    .why-card > * {
-      position: relative;
-      z-index: 2;
-    }
-
-    .why-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      background:
-        linear-gradient(180deg, rgba(17, 19, 21, .16) 0%, rgba(17, 19, 21, .62) 48%, rgba(17, 19, 21, .96) 100%),
-        var(--why-image) center/cover;
-      transform: scale(1);
-      transition: transform .7s ease, opacity .25s ease;
-    }
-
-    .why-card:hover::after {
-      transform: scale(1.06);
     }
 
     .why-card::before {
@@ -945,22 +980,6 @@
 
     .why-card:hover::before {
       transform: scaleX(1);
-    }
-
-    .why-card-local {
-      --why-image: url("assets/why-local-assembly.webp");
-    }
-
-    .why-card-price {
-      --why-image: url("assets/why-price-advantage.webp");
-    }
-
-    .why-card-range {
-      --why-image: url("assets/why-product-range.webp");
-    }
-
-    .why-card-custom {
-      --why-image: url("assets/why-custom-orders.webp");
     }
 
     .why-icon {
@@ -1051,7 +1070,7 @@
       border-radius: 6px;
       padding: 28px;
       border: 1px solid rgba(255, 255, 255, .7);
-      box-shadow: 0 18px 44px rgba(17, 19, 21, .08);
+      box-shadow: 0 18px 44px rgba(11, 11, 11, .08);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
@@ -1186,10 +1205,10 @@
       inset: 0;
       z-index: 2;
       background:
-        linear-gradient(180deg, rgba(17, 19, 21, .06) 0%, rgba(17, 19, 21, .48) 48%, rgba(17, 19, 21, .92) 100%),
+        linear-gradient(180deg, rgba(11, 11, 11, .06) 0%, rgba(11, 11, 11, .48) 48%, rgba(11, 11, 11, .92) 100%),
         repeating-linear-gradient(45deg,
-          rgba(212, 160, 23, 0.05) 0px,
-          rgba(212, 160, 23, 0.05) 1px,
+          rgba(245, 198, 24, 0.05) 0px,
+          rgba(245, 198, 24, 0.05) 1px,
           transparent 1px,
           transparent 10px);
     }
@@ -1241,12 +1260,12 @@
     .app-tag {
       font-size: 11px;
       font-weight: 600;
-      background: rgba(240, 180, 41, .16);
+      background: rgba(255, 216, 74, .16);
       color: var(--gold-light);
       padding: 3px 10px;
       border-radius: 2px;
       letter-spacing: .3px;
-      border: 1px solid rgba(240, 180, 41, .18);
+      border: 1px solid rgba(255, 216, 74, .18);
     }
 
     /* ── DISTRIBUTORS ─────────────────────────────────────────── */
@@ -1320,8 +1339,8 @@
     /* ── EXPORT ──────────────────────────────────────────────── */
     .export {
       background:
-        linear-gradient(90deg, rgba(17, 19, 21, .88) 0%, rgba(17, 19, 21, .64) 46%, rgba(17, 19, 21, .86) 100%),
-        linear-gradient(180deg, rgba(17, 19, 21, .78) 0%, rgba(17, 19, 21, .62) 48%, rgba(17, 19, 21, .9) 100%),
+        linear-gradient(90deg, rgba(11, 11, 11, .88) 0%, rgba(11, 11, 11, .64) 46%, rgba(11, 11, 11, .86) 100%),
+        linear-gradient(180deg, rgba(11, 11, 11, .78) 0%, rgba(11, 11, 11, .62) 48%, rgba(11, 11, 11, .9) 100%),
         url("assets/export-logistics.webp") center/cover;
       padding: 80px 0;
       position: relative;
@@ -1342,7 +1361,7 @@
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 120px;
       font-weight: 900;
-      color: rgba(212, 160, 23, 0.04);
+      color: rgba(245, 198, 24, 0.04);
       letter-spacing: -4px;
       pointer-events: none;
       white-space: nowrap;
@@ -1414,7 +1433,7 @@
         rgba(46, 46, 46, .82);
       border-radius: 6px;
       padding: 28px;
-      border: 1px solid rgba(212, 160, 23, 0.15);
+      border: 1px solid rgba(245, 198, 24, 0.15);
       box-shadow: 0 22px 58px rgba(0, 0, 0, .18);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
@@ -1474,13 +1493,13 @@
 
     .cta p {
       font-size: 16px;
-      color: rgba(35, 35, 35, 0.7);
+      color: rgba(11, 11, 11, 0.7);
       margin-top: 6px;
     }
 
     .cta .btn-white {
-      border: 1px solid rgba(35, 35, 35, .16);
-      box-shadow: 0 10px 24px rgba(17, 19, 21, .08);
+      border: 1px solid rgba(11, 11, 11, .16);
+      box-shadow: 0 10px 24px rgba(11, 11, 11, .08);
     }
 
     .cta-btns {
@@ -1492,8 +1511,8 @@
     /* ── CONTACT ─────────────────────────────────────────────── */
     .contact {
       background:
-        linear-gradient(90deg, rgba(17, 19, 21, .9) 0%, rgba(17, 19, 21, .66) 48%, rgba(17, 19, 21, .88) 100%),
-        linear-gradient(180deg, rgba(17, 19, 21, .78) 0%, rgba(17, 19, 21, .54) 48%, rgba(17, 19, 21, .92) 100%),
+        linear-gradient(90deg, rgba(11, 11, 11, .9) 0%, rgba(11, 11, 11, .66) 48%, rgba(11, 11, 11, .88) 100%),
+        linear-gradient(180deg, rgba(11, 11, 11, .78) 0%, rgba(11, 11, 11, .54) 48%, rgba(11, 11, 11, .92) 100%),
         url("assets/contact-mine.webp") center/cover;
       padding: 80px 0;
       position: relative;
@@ -1578,7 +1597,7 @@
       border-radius: 6px;
       padding: 32px;
       border: 1px solid rgba(255, 255, 255, .78);
-      box-shadow: 0 24px 58px rgba(17, 19, 21, .1);
+      box-shadow: 0 24px 58px rgba(11, 11, 11, .1);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
@@ -1871,11 +1890,12 @@
   <div class="topbar">
     <div class="container">
       <div class="topbar-inner">
-        <span class="topbar-location"><i data-lucide="map-pin"></i>Hyderabad, Telangana, India &nbsp;|&nbsp; EEPC Registered Exporter</span>
+        <span class="topbar-location"><i data-lucide="map-pin"></i>Hyderabad, Telangana, India &nbsp;|&nbsp; Udyam MSME &nbsp;|&nbsp; EEPC Registered Exporter</span>
         <div class="topbar-links">
-          <a href="tel:+919393539240">+91 9393 539 240</a>
-          <a href="mailto:info@gmpneumatics.com">info@gmpneumatics.com</a>
-        </div>
+<a href="tel:+919393539240">+91 9393 539 240</a>
+<a href="mailto:info@gmpneumatics.com">info@gmpneumatics.com</a>
+<a href="mailto:info@swiftlyport.com">info@swiftlyport.com</a>
+</div>
       </div>
     </div>
   </div>
@@ -1885,11 +1905,11 @@
     <div class="nav-inner">
       <a href="#" class="logo">
         <!-- SVG Gear Icon -->
-        <img class="logo-icon" src="assets/drill_bit_2.png" alt="GMP drill bit logo">
+        <img class="logo-icon" src="assets/gm-pneumatics-logo.svg" alt="GM Pneumatics logo" width="48" height="48">
         <div class="logo-text">
-          <span class="logo-gmp">GMP</span>
-          <span class="logo-full">Grinding & Mining Products</span>
-          <span class="logo-sub">Rock Drilling Tools · Est. 2024</span>
+          <span class="logo-gmp">GM</span>
+          <span class="logo-full">Pneumatics</span>
+          <span class="logo-sub">Rock Drilling Tools · Est. 2021</span>
         </div>
       </a>
       <ul class="nav-links">
@@ -1897,7 +1917,8 @@
         <li><a href="#quality">Quality</a></li>
         <li><a href="#applications">Applications</a></li>
         <li><a href="#export">Export</a></li>
-        <li><a href="#contact">Distributors</a></li>
+        <li><a href="#distributors">Distributors</a></li>
+        <li><a href="assets/GM-Pneumatics-DTH-Catalogue-2026.pdf" download>Catalogue</a></li>
         <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
       </ul>
     </div>
@@ -1932,11 +1953,11 @@
       <div class="hero-content">
         <div class="hero-eyebrow">Indian-Made DTH Rock Drilling Tools</div>
         <h1>Drill Deeper.<br><em>Strike Water</em><br>Faster.</h1>
-        <p class="hero-desc">GMP manufactures Down-The-Hole Hammers and Drill Bits for hard-rock water well drilling and
-          mining. Assembled in Hyderabad — 30–40% below imported brands, delivered in days, not weeks.</p>
+        <p class="hero-desc">GM Pneumatics manufactures and supplies Down-The-Hole hammers and drill bits for hard-rock water-well drilling, mining and quarrying. Assembled in Hyderabad, priced 30–40% below imported premium brands, with stock items dispatched in 24–48 hours.</p>
         <div class="hero-btns">
           <a href="#products" class="btn btn-gold"><i data-lucide="boxes"></i>View Product Range</a>
           <a href="#contact" class="btn btn-outline"><i data-lucide="send"></i>Request a Quote</a>
+          <a href="assets/GM-Pneumatics-DTH-Catalogue-2026.pdf" class="btn btn-dl" download><i data-lucide="download" aria-hidden="true"></i>Download Catalogue (PDF)</a>
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
@@ -1960,7 +1981,7 @@
       <div class="hero-visual">
         <div class="hero-gear-wrap">
           <!-- Large decorative gear SVG -->
-          <img src="assets/drill_bit_2.png" class="hero-logo" alt="Carbide button drill bit">
+          <img src="assets/gm-pneumatics-logo.svg" class="hero-logo" alt="GM Pneumatics gear and drill logo" width="340" height="340">
           <div class="hero-badge hero-badge-1">DTH Hammer 8"</div>
           <div class="hero-badge hero-badge-2">Carbide Buttons</div>
         </div>
@@ -1971,31 +1992,25 @@
   <!-- PROBLEM -->
   <section class="problem">
     <div class="container">
-      <span class="section-label">The Problems We Solve</span>
+      <span class="section-label">The Problem We Solve</span>
       <div class="problem-grid">
         <div class="problem-card problem-card-water fade-up">
           <div class="problem-icon glass-icon"><i data-lucide="waves" class="icon-md"></i></div>
           <div class="problem-num">01</div>
           <h3>Water Access in Hard Rock</h3>
-          <p>600 million Indians face severe water stress. In hard-rock regions like Rajasthan, Telangana, and
-            Karnataka, reaching groundwater requires drilling through granite and basalt — impossible without a DTH
-            hammer. GMP puts water in the hands of communities that need it most.</p>
+          <p>In hard-rock regions like Rajasthan, Telangana and Karnataka, reaching groundwater means drilling through granite and basalt — work that needs a DTH hammer. Reliable, affordable tools put water within reach of the communities that need it most.</p>
         </div>
         <div class="problem-card problem-card-import fade-up">
           <div class="problem-icon glass-icon"><i data-lucide="container" class="icon-md"></i></div>
           <div class="problem-num">02</div>
           <h3>The High Cost of Imports</h3>
-          <p>Most DTH tools in India are imported from Sweden and the USA at a 30–40% premium. Small drilling
-            contractors simply cannot afford them. GMP delivers equivalent quality, assembled in India, at a price that
-            works for the people doing the actual drilling.</p>
+          <p>Premium imported DTH tools carry a heavy price tag that small drilling contractors struggle to afford. GM Pneumatics offers comparable engineering, assembled in India, at 30–40% below imported premium brands — judged on cost per metre drilled.</p>
         </div>
         <div class="problem-card problem-card-downtime fade-up">
           <div class="problem-icon glass-icon"><i data-lucide="timer-reset" class="icon-md"></i></div>
           <div class="problem-num">03</div>
           <h3>Downtime Kills Contracts</h3>
-          <p>When an imported hammer fails on site, contractors wait days or weeks for replacement parts. GMP is
-            assembled in Hyderabad — replacement hammers and bits ship within 24–48 hours, keeping drilling rigs running
-            and contractors profitable.</p>
+          <p>When an imported hammer fails on site, contractors wait days or weeks for replacement parts. GM Pneumatics is based in Hyderabad — stock hammers and bits ship within 24–48 hours, keeping drilling rigs running and contractors profitable.</p>
         </div>
       </div>
     </div>
@@ -2019,222 +2034,63 @@
         <div class="prod-table-wrap">
           <table class="prod-table">
             <thead>
-              <tr>
-                <th>Model</th>
-                <th>Size (in)</th>
-                <th>Size (mm)</th>
-                <th>Hole Diameter</th>
-                <th>Air Pressure</th>
-                <th>Application</th>
-              </tr>
+              <tr><th>Model</th><th>Size</th><th>Hole Range</th><th>Top-Sub Thread (pin)</th><th>Bit Shank Options</th><th>GMP Bit Models</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="model">GMP-DHD35</td>
-                <td>3&#x2011;1/2"</td>
-                <td>89 mm</td>
-                <td>90–115 mm</td>
-                <td>6–24 bar</td>
-                <td>Water well, shallow drilling</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-DHD4</td>
-                <td>4"</td>
-                <td>102 mm</td>
-                <td>100–130 mm</td>
-                <td>8–24 bar</td>
-                <td>Water well, borehole drilling</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-DHD43</td>
-                <td>4&#x2011;3/4"</td>
-                <td>121 mm</td>
-                <td>121–152 mm</td>
-                <td>8–25 bar</td>
-                <td>Water well, medium formation</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-DHD5</td>
-                <td>5"</td>
-                <td>127 mm</td>
-                <td>130–165 mm</td>
-                <td>8–25 bar</td>
-                <td>Mining, medium formation</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-DHD6</td>
-                <td>6"</td>
-                <td>152 mm</td>
-                <td>152–175 mm</td>
-                <td>10–25 bar</td>
-                <td>Quarrying, hard rock mining</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-DHD65</td>
-                <td>6&#x2011;1/2"</td>
-                <td>165 mm</td>
-                <td>165–200 mm</td>
-                <td>10–25 bar</td>
-                <td>Hard rock, open-pit mining</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-DHD7</td>
-                <td>7"</td>
-                <td>178 mm</td>
-                <td>190–220 mm</td>
-                <td>12–28 bar</td>
-                <td>Deep mining, blast holes</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-DHD8</td>
-                <td>8"</td>
-                <td>203 mm</td>
-                <td>200–250 mm</td>
-                <td>12–30 bar</td>
-                <td>Deep mining, overburden</td>
-              </tr>
+              <tr><td class="model">GMP-DHD35</td><td>3½"</td><td>89–110 mm</td><td>API 2-3/8" Reg</td><td>DHD3.5</td><td>GMP-B4</td></tr>
+              <tr><td class="model">GMP-DHD4</td><td>4"</td><td>105–130 mm</td><td>API 2-3/8" Reg</td><td>DHD340A · QL40 · SD4</td><td>GMP-B43</td></tr>
+              <tr><td class="model">GMP-DHD43</td><td>4¾"</td><td>121–135 mm</td><td>API 2-3/8" Reg</td><td>DHD340A · QL40</td><td>GMP-B43</td></tr>
+              <tr><td class="model">GMP-DHD5</td><td>5"</td><td>130–152 mm</td><td>API 3½" Reg</td><td>DHD350R · QL50</td><td>On request</td></tr>
+              <tr><td class="model">GMP-DHD6</td><td>6"</td><td>152–178 mm</td><td>API 3½" Reg</td><td>DHD360 · QL60 · SD6</td><td>GMP-B65 · B7 · B725 · B75</td></tr>
+              <tr><td class="model">GMP-DHD65</td><td>6½"</td><td>165–190 mm</td><td>API 3½" Reg</td><td>DHD360 · QL60 · SD6</td><td>GMP-B65 · B7 · B725 · B75</td></tr>
+              <tr><td class="model">GMP-DHD7</td><td>7"</td><td>178–203 mm</td><td>API 3½" / 4½" Reg</td><td>Specify when ordering</td><td>Matched to order</td></tr>
+              <tr><td class="model">GMP-DHD8</td><td>8"</td><td>203–254 mm</td><td>API 4½" Reg</td><td>DHD380 · QL80 · SD8</td><td>GMP-B8</td></tr>
             </tbody>
           </table>
         </div>
         <div class="prod-info-grid" style="margin-top:24px">
-          <div class="prod-info-box">
-            <div class="val">EN24/EN36</div>
-            <div class="lbl">Alloy Steel Grade</div>
-          </div>
-          <div class="prod-info-box">
-            <div class="val">6–30 bar</div>
-            <div class="lbl">Working Pressure Range</div>
-          </div>
-          <div class="prod-info-box">
-            <div class="val">API Std</div>
-            <div class="lbl">Thread Specification</div>
-          </div>
-          <div class="prod-info-box">
-            <div class="val">7–15 days</div>
-            <div class="lbl">Custom Order Lead Time</div>
-          </div>
+          <div class="prod-info-box"><div class="val">EN24/EN36</div><div class="lbl">Alloy Steel Grade</div></div>
+          <div class="prod-info-box"><div class="val">10–25 bar</div><div class="lbl">Working Pressure Range</div></div>
+          <div class="prod-info-box"><div class="val">API Reg</div><div class="lbl">Top-Sub Thread (pin)</div></div>
+          <div class="prod-info-box"><div class="val">7–15 days</div><div class="lbl">Custom Order Lead Time</div></div>
         </div>
+        <p class="prod-note">A hammer's size is the smallest hole it drills; larger bits drill up to the range shown. OD, length, weight and air consumption for each model are on our model data sheet — available on request.</p>
       </div>
 
       <div id="tab-bits" class="tab-content">
         <div class="prod-table-wrap">
           <table class="prod-table">
             <thead>
-              <tr>
-                <th>Model</th>
-                <th>Size (in)</th>
-                <th>Dia (mm)</th>
-                <th>Compatible Hammer</th>
-                <th>Button Type</th>
-                <th>Formation</th>
-                <th>Type</th>
-              </tr>
+              <tr><th>Model</th><th>Size</th><th>Bit Ø</th><th>GMP Hammers</th><th>Fits Other Brands' Hammers (shank — hammer models)</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="model">GMP-B4</td>
-                <td>4"</td>
-                <td>102 mm</td>
-                <td>GMP-DHD4 / DHD340</td>
-                <td>Concave/Flat</td>
-                <td>Soft–Med</td>
-                <td>Standard</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-B43</td>
-                <td>4&#x2011;3/4"</td>
-                <td>121 mm</td>
-                <td>GMP-DHD43 / COP44</td>
-                <td>Concave/Flat</td>
-                <td>Medium</td>
-                <td>Standard</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-B65</td>
-                <td>6&#x2011;1/2"</td>
-                <td>165 mm</td>
-                <td>GMP-DHD65 / DHD360</td>
-                <td>Convex</td>
-                <td>Hard</td>
-                <td>Standard</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-B7</td>
-                <td>7"</td>
-                <td>178 mm</td>
-                <td>GMP-DHD7 / QL60</td>
-                <td>Convex</td>
-                <td>Hard</td>
-                <td>Standard</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-B725</td>
-                <td>7&#x2011;1/4"</td>
-                <td>184 mm</td>
-                <td>GMP-DHD7 / QL60</td>
-                <td>Convex</td>
-                <td>Hard</td>
-                <td>Standard</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-B75</td>
-                <td>7&#x2011;1/2"</td>
-                <td>191 mm</td>
-                <td>GMP-DHD7 / QL60</td>
-                <td>Convex</td>
-                <td>Hard</td>
-                <td>Standard</td>
-              </tr>
-              <tr>
-                <td class="model">GMP-B8</td>
-                <td>8"</td>
-                <td>203 mm</td>
-                <td>GMP-DHD8 / QL80</td>
-                <td>Convex/Flat</td>
-                <td>Very Hard</td>
-                <td>Standard</td>
-              </tr>
-              <tr class="ob-row">
-                <td class="model">GMP-OB9</td>
-                <td>OB 9"</td>
-                <td>229 mm</td>
-                <td>GMP-DHD8 / QL80</td>
-                <td>Flat Face</td>
-                <td>Very Hard</td>
-                <td>Overburden <span class="ob-badge">OB</span></td>
-              </tr>
-              <tr class="ob-row">
-                <td class="model">GMP-OB95</td>
-                <td>OB 9&#x2011;1/2"</td>
-                <td>241 mm</td>
-                <td>GMP-DHD8 / QL80</td>
-                <td>Flat Face</td>
-                <td>Very Hard</td>
-                <td>Overburden <span class="ob-badge">OB</span></td>
-              </tr>
+              <tr><td class="model">GMP-B4</td><td>4"</td><td>102 mm</td><td>GMP-DHD35</td><td class="fits"><b>DHD3.5</b> — Atlas Copco / Epiroc COP 35 · Mincon 3½"</td></tr>
+              <tr><td class="model">GMP-B43</td><td>4¾"</td><td>121 mm</td><td>GMP-DHD4 · DHD43</td><td class="fits"><b>DHD340A</b> — Atlas Copco / Epiroc COP 44 · Numa Champion 40 · Mincon 4HR<br><b>QL40</b> — Sandvik RH460 (QLX40)<br><b>SD4</b> — Sandvik SD4</td></tr>
+              <tr><td class="model">GMP-B65</td><td>6½"</td><td>165 mm</td><td>GMP-DHD6 · DHD65</td><td class="fits"><b>DHD360</b> — Atlas Copco / Epiroc COP 64 · Mincon 6DH360<br><b>QL60</b> — Epiroc COP 64 Gold · Atlas Copco QL60 · Mincon 6DH<br><b>SD6</b> — Sandvik SD6</td></tr>
+              <tr><td class="model">GMP-B7</td><td>7"</td><td>178 mm</td><td>GMP-DHD6 · DHD65</td><td class="fits"><b>DHD360</b> — Atlas Copco / Epiroc COP 64 · Mincon 6DH360<br><b>QL60</b> — Epiroc COP 64 Gold · Atlas Copco QL60 · Mincon 6DH<br><b>SD6</b> — Sandvik SD6</td></tr>
+              <tr><td class="model">GMP-B725</td><td>7¼"</td><td>184 mm</td><td>GMP-DHD6 · DHD65</td><td class="fits"><b>DHD360</b> — Atlas Copco / Epiroc COP 64 · Mincon 6DH360<br><b>QL60</b> — Epiroc COP 64 Gold · Atlas Copco QL60 · Mincon 6DH<br><b>SD6</b> — Sandvik SD6</td></tr>
+              <tr><td class="model">GMP-B75</td><td>7½"</td><td>190 mm</td><td>GMP-DHD6 · DHD65</td><td class="fits"><b>DHD360</b> — Atlas Copco / Epiroc COP 64 · Mincon 6DH360<br><b>QL60</b> — Epiroc COP 64 Gold · Atlas Copco QL60 · Mincon 6DH<br><b>SD6</b> — Sandvik SD6</td></tr>
+              <tr><td class="model">GMP-B8</td><td>8"</td><td>203 mm</td><td>GMP-DHD8</td><td class="fits"><b>DHD380</b> — Atlas Copco / Epiroc COP 84 · Numa P80 · Mincon 8DH<br><b>QL80</b> — Atlas Copco QL80<br><b>SD8</b> — Sandvik SD8</td></tr>
+              <tr class="ob-row"><td class="model">GMP-OB9 <span class="ob-badge">OB</span></td><td>OB 9"</td><td>229 mm</td><td>Casing system</td><td class="fits">Made to suit your overburden casing system — send us its make and size.</td></tr>
+              <tr class="ob-row"><td class="model">GMP-OB95 <span class="ob-badge">OB</span></td><td>OB 9½"</td><td>241 mm</td><td>Casing system</td><td class="fits">Made to suit your overburden casing system — send us its make and size.</td></tr>
             </tbody>
           </table>
         </div>
         <div class="prod-info-grid" style="margin-top:24px">
-          <div class="prod-info-box">
-            <div class="val">YG8/YG11C</div>
-            <div class="lbl">Carbide Button Grade</div>
-          </div>
-          <div class="prod-info-box">
-            <div class="val">3 Profiles</div>
-            <div class="lbl">Flat · Concave · Convex</div>
-          </div>
-          <div class="prod-info-box">
-            <div class="val">All Brands</div>
-            <div class="lbl">DHD · QL · SD · COP</div>
-          </div>
-          <div class="prod-info-box">
-            <div class="val">OB System</div>
-            <div class="lbl">Overburden Drilling</div>
-          </div>
+          <div class="prod-info-box"><div class="val">YG8/YG11C</div><div class="lbl">Carbide Button Grade</div></div>
+          <div class="prod-info-box"><div class="val">3 Profiles</div><div class="lbl">Flat · Concave · Convex</div></div>
+          <div class="prod-info-box"><div class="val">4 Shanks</div><div class="lbl">DHD · QL · SD · Mission</div></div>
+          <div class="prod-info-box"><div class="val">OB System</div><div class="lbl">Overburden Drilling</div></div>
         </div>
-        <p style="font-size:13px;color:var(--text-light);margin-top:14px">* OB = Overburden system bits — designed for casing
-          advancement in loose or unstable formations.</p>
+        <p class="prod-note"><b>How to choose:</b> find your hammer — ours or another brand — then pick the hole size you need. Quote the model and shank, e.g. <b>GMP-B65, DHD360 shank</b>. All button bits come in flat, concave or convex face. OB = overburden bits for casing advancement in loose or unstable ground.</p>
+        <p class="prod-note" style="font-size:12px">Other brand and model names are trademarks of their respective owners, shown only to indicate shank compatibility; GM Pneumatics is not affiliated with them.</p>
+      </div>
+      <div class="cat-banner fade-up">
+        <div>
+          <strong>Full catalogue with shank guide &amp; drawings</strong>
+          <p>6 pages · hammers, bits, shank cross-reference and ordering terms</p>
+        </div>
+        <a href="assets/GM-Pneumatics-DTH-Catalogue-2026.pdf" class="btn btn-gold" download><i data-lucide="download" aria-hidden="true"></i>Download Catalogue (PDF)</a>
       </div>
     </div>
   </section>
@@ -2243,34 +2099,30 @@
   <section class="why">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-label">Why Choose GMP</span>
+        <span class="section-label">Why Choose GM Pneumatics</span>
         <h2>Indian Quality.<br>Local Speed.<br>Global Standard.</h2>
         <p>Three words that answer every contractor's biggest question about their drilling tools supplier.</p>
       </div>
       <div class="why-grid">
-        <div class="why-card why-card-local fade-up">
+        <div class="why-card fade-up">
           <div class="why-icon glass-icon"><i data-lucide="map-pinned" class="icon-md"></i></div>
           <h3>Assembled in India</h3>
-          <p>Every GMP hammer and bit is assembled in Hyderabad, Telangana. No import delays, no customs clearance, no
-            weeks of waiting. Your tools ship within 24–48 hours of order confirmation.</p>
+          <p>Every GMP hammer and bit is assembled in Hyderabad, Telangana. No import delays, no customs clearance, no weeks of waiting. Stock items ship within 24–48 hours of order confirmation.</p>
         </div>
-        <div class="why-card why-card-price fade-up">
+        <div class="why-card fade-up">
           <div class="why-icon glass-icon"><i data-lucide="badge-percent" class="icon-md"></i></div>
           <h3>30–40% Below Import Prices</h3>
-          <p>Sandvik, Atlas Copco, and other imported brands carry a heavy premium. GMP delivers equivalent EN24/EN36
-            steel and YG8 carbide quality at pricing that makes economic sense for Indian contractors.</p>
+          <p>Sandvik, Atlas Copco, and other imported brands carry a heavy premium. GM Pneumatics uses EN24/EN36 alloy steel and YG8/YG11C carbide, at pricing that makes economic sense for contractors — judged on cost per metre drilled.</p>
         </div>
-        <div class="why-card why-card-range fade-up">
+        <div class="why-card fade-up">
           <div class="why-icon glass-icon"><i data-lucide="boxes" class="icon-md"></i></div>
           <h3>Full Range, All Applications</h3>
-          <p>8 hammer sizes from 3½" to 8". 9 bit sizes including overburden. Standard and OB systems. Water well to
-            deep mining — GMP covers every application so you deal with one supplier, not five.</p>
+          <p>8 hammer sizes from 3½" to 8". 9 bit sizes including overburden. Standard and OB systems. Water well to deep mining — GMP covers every application so you deal with one supplier, not five.</p>
         </div>
-        <div class="why-card why-card-custom fade-up">
+        <div class="why-card fade-up">
           <div class="why-icon glass-icon"><i data-lucide="settings-2" class="icon-md"></i></div>
           <h3>Custom Orders Welcome</h3>
-          <p>Non-standard sizes, special thread types, specific carbide button configurations for unique formations —
-            GMP accepts OEM and project-specific orders with a lead time of 7–15 working days.</p>
+          <p>Non-standard sizes, special thread types, specific carbide button configurations for unique formations — We accept OEM and project-specific orders with a lead time of 7–15 days.</p>
         </div>
       </div>
     </div>
@@ -2278,105 +2130,91 @@
 
   <!-- QUALITY -->
   <section class="quality" id="quality">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-label">Quality Standards</span>
-        <h2>Non-Negotiable<br>Specifications</h2>
-        <p>The materials and processes behind every GMP hammer and bit — because quality in drilling tools is the
-          difference between a completed borewell and a stuck rig.</p>
-      </div>
-      <div class="quality-grid">
-        <ul class="quality-list">
-          <li class="quality-item fade-up">
-            <div class="quality-dot"></div>
-            <div>
-              <h4>EN24 / EN36 Alloy Steel</h4>
-              <p>High-tensile nickel-chromium-molybdenum alloy steel for maximum impact resistance and fatigue life. Not
-                mild steel, not carbon steel — the same grade used by leading global manufacturers.</p>
-            </div>
-          </li>
-          <li class="quality-item fade-up">
-            <div class="quality-dot"></div>
-            <div>
-              <h4>YG8 / YG11C Tungsten Carbide</h4>
-              <p>Premium-grade carbide buttons with optimal cobalt content for the balance of hardness and toughness.
-                Significantly outperforms low-grade Chinese carbide in penetration rate and bit life.</p>
-            </div>
-          </li>
-          <li class="quality-item fade-up">
-            <div class="quality-dot"></div>
-            <div>
-              <h4>Carburised & Case Hardened</h4>
-              <p>Every hammer body undergoes certified heat treatment — carburising followed by case hardening — to
-                achieve surface hardness while maintaining a tough core. Done at certified facilities only.</p>
-            </div>
-          </li>
-          <li class="quality-item fade-up">
-            <div class="quality-dot"></div>
-            <div>
-              <h4>API-Standard Threading</h4>
-              <p>All shank connections are machined to API standard thread specifications — DHD, QL, SD, and COP
-                compatible — ensuring perfect fit with all major hammer brands and drill strings.</p>
-            </div>
-          </li>
-          <li class="quality-item fade-up">
-            <div class="quality-dot"></div>
-            <div>
-              <h4>Pressure-Tested Before Dispatch</h4>
-              <p>Each hammer is pressure-tested at 110% of its rated working pressure before leaving our facility. Test
-                date and rating are stamped on the body.</p>
-            </div>
-          </li>
-        </ul>
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Quality Standards</span>
+      <h2>Non-Negotiable<br>Specifications</h2>
+      <p>The materials and processes behind every GMP hammer and bit — because quality in drilling tools is the difference between a completed borewell and a stuck rig.</p>
+    </div>
+    <div class="quality-grid">
+      <ul class="quality-list">
+        <li class="quality-item fade-up">
+          <div class="quality-dot"></div>
+          <div>
+            <h4>EN24 / EN36 Alloy Steel</h4>
+            <p>High-tensile nickel-chromium-molybdenum alloy steel for maximum impact resistance and fatigue life. Not mild steel, not carbon steel — the same grade used by leading global manufacturers.</p>
+          </div>
+        </li>
+        <li class="quality-item fade-up">
+          <div class="quality-dot"></div>
+          <div>
+            <h4>YG8 / YG11C Tungsten Carbide</h4>
+            <p>Carbide buttons graded for the right balance of hardness and toughness, with spherical or ballistic shapes to suit your rock.</p>
+          </div>
+        </li>
+        <li class="quality-item fade-up">
+          <div class="quality-dot"></div>
+          <div>
+            <h4>Heat-Treated Components</h4>
+            <p>Hammer components are heat-treated for a hard, wear-resistant surface over a tough core, so they stand up to continuous impact.</p>
+          </div>
+        </li>
+        <li class="quality-item fade-up">
+          <div class="quality-dot"></div>
+          <div>
+            <h4>API-Standard Threading</h4>
+            <p>Top subs use API Reg pin threads (2-3/8", 3½", 4½") to fit standard drill pipe. Bits are made with DHD, QL, SD or Mission shanks to fit the hammer you already run.</p>
+          </div>
+        </li>
+        <li class="quality-item fade-up">
+          <div class="quality-dot"></div>
+          <div>
+            <h4>Matched Hammer &amp; Bit Range</h4>
+            <p>Every GMP bit is listed against the GMP hammers and the shank standards it fits, so ordering the right replacement is simple — see the shank guide in our catalogue.</p>
+          </div>
+        </li>
+      </ul>
 
-        <div>
-          <div class="quality-certs fade-up">
-            <h3>Certifications & Compliance</h3>
-            <div class="cert-badge">
-              <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
-              <div>
-                <div class="cert-name">ISO 9001:2015</div>
-                <div class="cert-desc">Quality management system — in progress</div>
-              </div>
-              <span class="cert-status status-pending">In Progress</span>
+      <div>
+        <div class="quality-certs fade-up">
+          <h3>Certifications & Compliance</h3>
+          <div class="cert-badge">
+            <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
+            <div>
+              <div class="cert-name">ISO 9001:2015</div>
+              <div class="cert-desc">Quality management system — in progress</div>
             </div>
-            <div class="cert-badge">
-              <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
-              <div>
-                <div class="cert-name">EEPC Registered</div>
-                <div class="cert-desc">Engineering Export Promotion Council, India</div>
-              </div>
-              <span class="cert-status status-active">Active</span>
+            <span class="cert-status status-pending">In Progress</span>
+          </div>
+          <div class="cert-badge">
+            <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
+            <div>
+              <div class="cert-name">Udyam Registered MSME</div>
+              <div class="cert-desc">UDYAM-TS-09-0016717 · Government of India</div>
             </div>
-            <div class="cert-badge">
-              <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
-              <div>
-                <div class="cert-name">Mill Certificates</div>
-                <div class="cert-desc">Material traceability for every batch</div>
-              </div>
-              <span class="cert-status status-active">Active</span>
+            <span class="cert-status status-active">Active</span>
+          </div>
+          <div class="cert-badge">
+            <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
+            <div>
+              <div class="cert-name">EEPC Registered</div>
+              <div class="cert-desc">Engineering Export Promotion Council, India</div>
             </div>
-            <div class="cert-badge">
-              <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
-              <div>
-                <div class="cert-name">BIS Registration</div>
-                <div class="cert-desc">Bureau of Indian Standards — in progress</div>
-              </div>
-              <span class="cert-status status-pending">In Progress</span>
+            <span class="cert-status status-active">Active</span>
+          </div>
+          <div class="cert-badge">
+            <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
+            <div>
+              <div class="cert-name">BIS Registration</div>
+              <div class="cert-desc">Bureau of Indian Standards — in progress</div>
             </div>
-            <div class="cert-badge">
-              <div class="cert-icon glass-icon"><i data-lucide="check" class="icon-sm"></i></div>
-              <div>
-                <div class="cert-name">Radiographic Testing</div>
-                <div class="cert-desc">Per-batch NDT at certified lab</div>
-              </div>
-              <span class="cert-status status-active">Active</span>
-            </div>
+            <span class="cert-status status-pending">In Progress</span>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- APPLICATIONS -->
   <section class="applications" id="applications">
@@ -2447,8 +2285,7 @@
       <div class="section-header fade-up">
         <span class="section-label">Distribution Network</span>
         <h2>Where to Find<br>GMP Products</h2>
-        <p>GMP is stocked and available through authorised distributors in India's key drilling markets. Export
-          enquiries handled directly through Swiftlyport.</p>
+        <p>GMP is stocked and available through authorised distributors in India's key drilling markets. Export enquiries handled through our export arm, Swiftlyport.</p>
       </div>
       <div class="dist-grid">
         <div class="dist-card fade-up">
@@ -2459,7 +2296,7 @@
             drilling. Contact your local distributor for stock availability and pricing.
           </div>
           <div style="margin-top:20px">
-            <a href="#contact" class="btn btn-outline" style="font-size:13px;padding:9px 20px">Contact Us</a>
+            <a href="#contact" class="btn btn-outline" style="font-size:13px;padding:9px 20px">Contact Distributor</a>
           </div>
         </div>
         <div class="dist-card fade-up">
@@ -2470,7 +2307,7 @@
             for immediate dispatch from Indore stock.
           </div>
           <div style="margin-top:20px">
-            <a href="#contact" class="btn btn-outline" style="font-size:13px;padding:9px 20px">Contact Us</a>
+            <a href="#contact" class="btn btn-outline" style="font-size:13px;padding:9px 20px">Contact Distributor</a>
           </div>
         </div>
       </div>
@@ -2500,7 +2337,7 @@
         <div>
           <h3
             style="color:var(--gold);font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px">
-            Priority Export Markets</h3>
+            Markets We Are Developing</h3>
           <ul class="market-list">
             <li class="market-item fade-up">
               <span class="market-code glass-icon">ZA</span>
@@ -2557,7 +2394,7 @@
             <div class="cred-check glass-icon"><i data-lucide="check" class="icon-sm"></i></div>Sample orders available for new international buyers
           </div>
           <div style="margin-top:24px">
-            <a href="mailto:info@gmpneumatics.com" class="btn btn-gold" style="font-size:13px">Send Export Enquiry</a>
+            <a href="mailto:info@swiftlyport.com" class="btn btn-gold" style="font-size:13px">Send Export Enquiry</a>
           </div>
         </div>
       </div>
@@ -2573,7 +2410,7 @@
           <p>Talk to Gulam Mustafa directly — get a quote within 24 hours.</p>
         </div>
         <div class="cta-btns">
-          <a href="https://wa.me/919393539240?text=Hello%20GMP%2C%20I%20would%20like%20to%20enquire%20about%20your%20DTH%20Hammers%20and%20Bits."
+          <a href="https://wa.me/919393539240?text=Hello%20GM%20Pneumatics%2C%20I%20would%20like%20to%20enquire%20about%20your%20DTH%20Hammers%20and%20Bits."
             class="btn btn-charcoal" style="background:var(--charcoal);color:var(--white)">WhatsApp Us</a>
           <a href="#contact" class="btn btn-white">Request Quote</a>
         </div>
@@ -2591,36 +2428,36 @@
       <div class="contact-grid">
         <div class="contact-info fade-up">
           <div class="contact-name">Gulam Mustafa</div>
-          <div class="contact-title">Proprietor — GMP Rock Drilling Tools</div>
+          <div class="contact-title">Proprietor — GM Pneumatics</div>
           <div class="contact-detail">
             <div class="contact-detail-icon glass-icon"><i data-lucide="phone" class="icon-sm"></i></div>
             <div class="contact-detail-text">
-              <strong>Phone / WhatsApp</strong>
-              +91 9393 539 240<br>+91 9642 320 158
-            </div>
+<strong>Phone / WhatsApp</strong>
+            +91 9393 539 240<br/>+91 9642 320 158
+          </div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-icon glass-icon"><i data-lucide="mail" class="icon-sm"></i></div>
             <div class="contact-detail-text">
-              <strong>Email</strong>
-              info@gmpneumatics.com
-            </div>
+<strong>Email</strong>
+            info@gmpneumatics.com<br/>info@swiftlyport.com
+          </div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-icon glass-icon"><i data-lucide="globe" class="icon-sm"></i></div>
             <div class="contact-detail-text">
-              <strong>Website</strong>
-              www.gmpneumatics.com<br>www.swiftlyport.com
-            </div>
+<strong>Website</strong>
+            www.gmpneumatics.com<br/>www.swiftlyport.com
+          </div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-icon glass-icon"><i data-lucide="map-pin" class="icon-sm"></i></div>
             <div class="contact-detail-text">
-              <strong>Address</strong>
-              #H.No: 1-9-105/1, Kushaiguda, ECIL Hyderabad,
-              Telangana 500062
-            </div>
+<strong>Address</strong>
+            H.No. 1-9-105/1, Kushaiguda, ECIL,<br/>Hyderabad – 500062, Telangana, India
           </div>
+          </div>
+          <div style="margin-top:20px"><a href="assets/GM-Pneumatics-DTH-Catalogue-2026.pdf" class="btn btn-outline" style="font-size:13px" download><i data-lucide="download" aria-hidden="true"></i>Download Catalogue (PDF)</a></div>
           <div
             style="margin-top:28px;padding:20px;background:var(--charcoal);border-radius:6px;border-left:3px solid var(--gold)">
             <div
@@ -2661,13 +2498,14 @@
               <option>Distributor Enquiry</option>
               <option>Export / International Order</option>
               <option>Custom Size Order</option>
+              <option>Catalogue / Price List Request</option>
               <option>General Enquiry</option>
             </select>
           </div>
           <div class="form-group">
             <label>Message</label>
             <textarea id="message"
-              placeholder="Write your message here. We'll get back to you within 24 hours."></textarea>
+              placeholder="Tell us your hammer size, quantity, application, and location — we&#x27;ll get back to you within 24 hours."></textarea>
           </div>
           <button type="button" class="btn btn-gold form-submit" onclick="handleSubmit()"><i data-lucide="send"></i>Send Enquiry</button>
           <p style="font-size:12px;color:var(--text-light);margin-top:12px;text-align:center">Or WhatsApp directly: <a
@@ -2682,11 +2520,11 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo-gmp">GMP</div>
-          <div class="footer-logo-full">Grinding & Mining Products</div>
+          <div class="footer-logo-gmp">GM</div>
+          <div class="footer-logo-full">Pneumatics</div>
           <p>Indian-assembled DTH Hammers and Drill Bits for water well drilling, hard rock mining, and quarrying. Built
             in Hyderabad. Built to last.</p>
-          <div style="margin-top:16px;font-size:12px;color:var(--silver-dark)">EEPC Registered · Est. 2024</div>
+          <div style="margin-top:16px;font-size:12px;color:var(--silver-dark)">Udyam MSME · EEPC Registered · Est. 2021</div>
         </div>
         <div class="footer-col">
           <h4>Products</h4>
@@ -2695,6 +2533,7 @@
             <li><a href="#products">Drill Bits 4"–OB 9½"</a></li>
             <li><a href="#products">Overburden System</a></li>
             <li><a href="#products">Custom Orders</a></li>
+            <li><a href="assets/GM-Pneumatics-DTH-Catalogue-2026.pdf" download>Catalogue (PDF)</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -2707,25 +2546,25 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
-          <p>Hyderabad, Telangana 500028<br><br>
-            <a href="tel:+919393539240">+91 9393 539 240</a><br>
-            <a href="tel:+919642320158">+91 9642 320 158</a><br><br>
-            <a href="mailto:info@gmpneumatics.com">info@gmpneumatics.com</a>
-          </p>
-        </div>
+<h4>Contact</h4>
+<p>Kushaiguda, ECIL, Hyderabad<br/>Telangana 500062<br/><br/>
+<a href="tel:+919393539240">+91 9393 539 240</a><br/>
+<a href="tel:+919642320158">+91 9642 320 158</a><br/><br/>
+<a href="mailto:info@gmpneumatics.com">info@gmpneumatics.com</a><br/>
+<a href="mailto:info@swiftlyport.com">info@swiftlyport.com</a></p>
+</div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 GMP — Grinding & Mining Products. All rights reserved.</span>
-        <span>Export enquiries: <a href="mailto:info@gmpneumatics.com"
-            style="color:var(--gold)">info@gmpneumatics.com</a></span>
+        <span>© 2026 GM Pneumatics. All rights reserved.</span>
+        <span>Export enquiries: <a href="mailto:info@swiftlyport.com"
+            style="color:var(--gold)">info@swiftlyport.com</a></span>
       </div>
     </div>
   </footer>
 
   <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/919393539240?text=Hello%20GMP%2C%20I%20would%20like%20to%20enquire%20about%20DTH%20Hammers%20and%20Bits."
-    class="whatsapp-float" target="_blank" title="WhatsApp GMP">
+  <a href="https://wa.me/919393539240?text=Hello%20GM%20Pneumatics%2C%20I%20would%20like%20to%20enquire%20about%20DTH%20Hammers%20and%20Bits."
+    class="whatsapp-float" target="_blank" title="WhatsApp GM Pneumatics">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
